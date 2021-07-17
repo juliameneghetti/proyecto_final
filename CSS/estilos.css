@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: 'Spartan', sans-serif;
+    color: rgb(226, 115, 160);
+}
+
+h1{
+    padding-top: 170px;
+    padding-bottom: 40px;
+    padding-left: 85px;
+
+    font-size: medium;
+}
+
+
+/*HEADER*/
+
+header{
+	width: 100%;	
+    position: absolute;
+}
+
+    /*LOGO*/
+
+    .logoTamaño{
+        height: 100px;
+        width: 350px;
+    }
+
+    .logoFlex{
+	    display: flex;
+	    justify-content: center;
+        align-items: center;        
+        
+        margin: 30px 0px;
+    }
+
+    /*MENÚ DE NAVEGACIÓN*/
+
+    .menuFlex ul{   
+        display: flex;
+	    justify-content: space-evenly;
+        list-style: none;
+
+        width: 600px;
+        padding: 0px 20px;
+    }
+
+    .menuFlex ul li a{
+	    text-decoration: none;
+        color: rgb(77, 77, 77);
+    }
+
+    .menuFlex ul li a:hover {
+        text-decoration: none;
+
+        color: rgb(226, 115, 160);
+        cursor: pointer;
+    }
+
+    .cuentaFlex {
+	    display: flex;
+	    align-items: center;
+    }
+
+    .cuentaFlex img{
+        width: 30px;
+        padding: 10px;
+    }
+
+
+/*BODY*/
+
+body{
+    background-color: black;
+}
+
+.videoNn{
+    width: 100%;
+    margin-top: 170px;
+}
+
+    /*IMÁGENES HOME*/
+
+    .imgHome{
+        display: flex;
+	    flex-flow: wrap;
+	    justify-content: center;
+    }   
+
+    .imgHome img{
+        width: 400px;
+        height: 500px;
+        margin: 100px 10px;    
+    }
+
+    .botónTienda{
+        margin: 50px;
+
+        align-items: center;
+
+	    text-decoration: none;
+    }
+
+    .botónTiendaEstilo{
+        padding: 10px 100px;
+
+        border: 2px solid white;
+        border-radius: 3px;
+
+        /*GRADIENT*/
+        background: linear-gradient(90deg, rgba(226,115,160,1) 0%, rgba(238,182,205,1) 50%);
+    
+        color: white;
+    }
+
+    /*SECCIÓN SOBRE MI*/
+
+    .flexSm{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    
+        background-image: url("../MULTIMEDIA/IMG/SOBRE MI/mancha.png");
+        background-repeat: no-repeat;
+        background-position: right;   
+
+        padding-top: 200px;
+    }
+    
+    .flexSm img{
+        width: 600px;
+        height: 750px;
+    }
+    
+    .flexSm p{
+        width: 400px;
+        height: 700px;
+        padding-top: 200px;
+        padding-right: 70px;
+    
+        color: white;
+
+        text-align: right;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        line-height: 25px;
+    }
+
+
+    /*SECCIÓN NEW IN*/
+
+    .gridNewIn{
+        display: grid;
+        grid-template-areas:
+        "next next next next"
+        "love love love love"
+        "pacman pacman pacman pacman";
+
+        padding: 120px 85px;
+    }
+
+    .gridNewIn div{
+        display: grid;
+        
+        height: 200px;
+
+        margin: 50px 0 0;
+        padding-left: 50px;
+
+        border: 5px solid rgb(185, 134, 155);
+    }
+
+    .gridNewIn div p{
+        display: grid;
+
+        justify-content: flex-start;
+        align-content: center;
+
+
+        font-family: 'Qahiri', sans-serif;
+        font-size: 150px;
+
+        text-shadow: 50px rgb(0, 0, 0);
+        color: rgb(185, 134, 155);
+    }
+
+    .gridNewIn div a{
+        text-decoration: none;
+    }
+      
+    .gridNextL{
+        background-image: url("../MULTIMEDIA/IMG/NEW IN/next.png");
+        background-size:cover;
+    }
+
+    .gridLoveY{
+        background-image: url("../MULTIMEDIA/IMG/NEW IN/love.png");
+        background-size: cover;
+    }
+
+    .gridPacman{
+        background-image: url("../MULTIMEDIA/IMG/NEW IN/pacman.png");
+        background-size: cover;
+    }
+
+    .fotoUno{
+        grid-area: next;
+    }
+    
+    .fotoDos{
+        grid-area: love;
+    }
+    
+    .fotoTres{
+        grid-area: pacman;
+    }
+
+    .animacion:hover{
+        display: grid;
+
+        animation: bounce;
+        animation-duration: 1s;
+    }
+
+
+    /*SECCIÓN TIENDA*/
+
+    .secciónTienda{
+        padding-top: 60px;
+
+        display: flex;
+	    flex-flow: wrap;
+	    justify-content: center;
+        text-align: center;
+    }
+
+    .secciónTienda img{
+        width: 300px;
+        height: 400px;
+        margin: 110px 35px 0px 35px;
+
+        /*TRANSITION*/
+        transition: all 2s;
+    }
+
+    .secciónTienda img:hover{
+        width: 400px;
+        height: 500px;
+    }
+
+    .recuadroImagen{
+        padding: 20px;
+
+        border: 2px solid;
+
+        /*GRADIENT*/
+        background: linear-gradient(90deg, rgba(226,115,160,1) 0%, rgba(238,182,205,1) 50%);
+    }
+
+    .pieFoto{
+        margin: 35px;
+
+        border: 2px solid white;
+
+        /*GRADIENT*/
+        background: linear-gradient(90deg, rgba(226,115,160,1) 0%, rgba(238,182,205,1) 50%);
+    }
+
+    .pieFoto p{
+        padding: 10px;
+
+        font-size: 14px;
+        color: white;
+
+        text-align: center;
+    }
+
+
+    /*SECCIÓN GALERÍA*/
+
+    .gridContainer{
+        padding: 0px 85px;
+
+        display: grid;
+        grid-template-areas:
+        "uno dos dos"
+        "tres tres cuatro"
+        "cinco cinco cinco";
+    }
+    
+    .gridContainer div{
+        padding: 10px;
+    
+        display: grid;
+        justify-content: center;
+
+        border: rgb(250, 145, 227) 2px solid;
+    }
+    
+    .gridContainer img{
+        width: 400px;
+        height: 500px;
+
+        border: 10px solid white;
+    }
+    
+    .gridContainer video{
+        width: 700px;
+        height: 500px;
+
+        border: 10px solid white;
+    }
+    
+    .valor1{
+        grid-area: uno;
+    }
+    
+    .valor2{
+        grid-area: dos;
+    }
+    
+    .valor3{
+        grid-area: tres;
+    }
+    
+    .valor4{
+        grid-area: cuatro;
+    }
+    
+    .valor5{
+        grid-area: cinco;
+    }
+
+
+    /*SECCIÓN CONTACTO*/
+
+    form{
+        position: relative;
+        background-image: url("../MULTIMEDIA/IMG/CONTACTO/camcont.png");
+        background-repeat: no-repeat;
+        background-position: right;    
+    }
+
+    form fieldset{
+        margin-left: 85px;
+        padding: 30px;
+    }
+
+    form fieldset legend{
+        text-align: center;
+        color: white;
+        font-size: 11px;
+    }
+
+    form fieldset p{
+        color: white;
+        font-size: 11px;
+    } 
+
+    form fieldset div{
+        margin: 30px 0;
+    }
+
+    form fieldset div label{
+        padding-right: 30px;
+    }
+
+    form fieldset div input{    
+        padding: 5px 15px 5px 15px;
+    }
+
+    .formulario{
+        padding: 30px 0 15px;
+    }
+
+
+/*FOOTER*/
+
+    footer{
+        padding: 20px;
+        margin-top: 100px;    
+    
+        text-align: center;
+
+        background-color: rgb(73 72 72 / 17%);
+    }
+
+    footer div a{
+        text-decoration: none;
+    }
+
+    footer div p{
+        padding-top: 30px;
+
+        font-size: 13px;
+    }
+
+    footer img{
+        width: 70px;    
+        padding: 5px 27px;
+    }
+
+
+/*responsive*/
+
+@media screen and (max-width: 576px) {
+
+    .menuFlex ul{
+        flex-direction: column;
+        width: 0px;
+        justify-content: left;
+    }
+
+     /* .menuFlex ul li a{
+        text-decoration: none;
+    }  */
+
+    .cuentaFlex img{
+        width: 20px;
+        padding: 5px;
+    }
+
+    .imgHome{
+        display: flex;
+        flex-flow: none;
+        justify-content: center;
+    }
+    
+    .imgHome img{
+        width: 180px;
+        height: 280px;
+        margin: 50px 5px;    
+    }
+    
+}
+
+
+
+

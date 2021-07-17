@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link CSS-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <!--link google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+
+    <title>IdeaJuliaMeneghetti</title>
+</head>
+
+<body>
+
+    <header>
+		<div class="logoFlex">
+
+			<div> <!--logo de la marca-->
+                <a href="index.html"><img src="MULTIMEDIA/IMG/HOME/logomarca.png" alt="logo de la marca" class="logoTamaño"></a>
+			</div>
+
+            <div class="menuFlex"> <!--menú de navegación-->
+                <nav>
+                    <ul>
+                        <li><a href="sobre_mi.html">SOBRE MI</a></li>
+                        <li><a href="new_in.html">NEW IN</a></li>
+                        <li><a href="tienda.html">TIENDA</a></li>
+                        <li><a href="galeria.html">GALERÍA</a></li>
+                        <li><a href="contacto.html" style="color:  rgb(226, 115, 160);">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="cuentaFlex"> <!--inciar sesión y carrito de compras-->
+                <a href=""><img src="MULTIMEDIA/IMG/HOME/avatar.png" alt="ícono avatar"></a>
+                <a href=""><img src="MULTIMEDIA/IMG/HOME/carrito.png" alt="ícono carrito"></a>
+            </div>
+
+        </div>
+    </header>
+    
+    <div> <!--formulario de contacto-->
+        <div>
+            <h1>DEJANOS TU CONSULTA</h1>
+        </div>
+    
+        <form action="">
+            <fieldset> 
+                <legend>DATOS DE CONTACTO</legend> 
+
+                <p>*todos los campos son requeridos</p>
+            
+                <div>
+                    <label for="name">Nombre</label>
+                        <input type="text" name="name">
+                </div>
+                
+                <div>
+                    <label for="surname">Apellido</label>
+                        <input type="text" name="surname">
+                </div>
+                
+                <div>
+                    <label for="mail">E-mail</label>
+                        <input type="email" name="mail">
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                        <input type="password" name="password">
+                </div>
+
+                <div>
+                    <label for="phone">Teléfono</label>
+                        <input type="tel" name="phone" placeholder="Ej: 0111512345678">
+                </div>
+
+                <div class="formulario">
+                    
+                    <p>Contactarme por</p>
+                    
+                    <div>
+                        <input type="radio" name="contact" value="mail">Mail
+                        <input type="radio" name="contact" value="teléfono">Teléfono
+                    </div>
+
+                </div>
+
+                <div>
+                    <label for="asunto">Asunto
+                        <select name="asunto">
+                            <option value="venta online">Venta online</option>
+                            <option value="otras consultas">Otras consultas</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="message">Mensaje
+                        <textarea name="message" id="" cols="40" rows="5"></textarea>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <label for="">No soy un robot</label>   
+                </div>
+                
+                <div>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+            </fieldset>
+            
+        </form>
+    </div>
+
+    <footer>
+        <div> <!--pie de página-->
+
+            <div>
+                <a href=""><img src="MULTIMEDIA/IMG/HOME/whatsapp.png" alt="ícono whatsapp"></a>
+                <a href=""><img src="MULTIMEDIA/IMG/HOME/instagram.png" alt="ícono instagram"></a>
+                <a href=""><img src="MULTIMEDIA/IMG/HOME/twitter.png" alt="ícono twitter"></a>
+            </div>
+
+            <div>
+                <p><a href="">by.joly@gmail.com</a></p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
